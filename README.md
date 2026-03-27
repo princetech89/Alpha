@@ -2,7 +2,7 @@
 
 <!-- Official AlphaSignal Logo -->
 <a href="https://github.com/princetech89/Alpha">
-  <img src="https://raw.githubusercontent.com/princetech89/Alpha/main/client/public/favicon.svg" width="120" height="120" alt="AlphaSignal Logo"/>
+  <img src="./logo.svg" width="130" height="130" alt="AlphaSignal Logo"/>
 </a>
 
 # AlphaSignal

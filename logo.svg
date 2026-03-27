@@ -1,0 +1,34 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+  <defs>
+    <linearGradient id="sg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2ff"/>
+      <stop offset="100%" stop-color="#ff0033"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dark circular background so logo is visible on any GitHub background -->
+  <circle cx="50" cy="50" r="48" fill="url(#bgGrad)"/>
+  <circle cx="50" cy="50" r="48" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Shadow / outline of the Alpha shape (scaled/shifted to fit circle) -->
+  <path d="M32,74 C32,74 50,28 50,28 C50,28 68,74 68,74"
+        fill="none" stroke="#0f172a" stroke-width="13"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Main gradient Alpha stroke (cyan→red) -->
+  <path d="M50,28 L32,74 M50,28 L68,74"
+        fill="none" stroke="url(#sg)" stroke-width="7"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Cross-bar (the signal / horizontal element) -->
+  <path d="M37,58 C37,58 63,54 63,44 C63,34 37,34 37,44"
+        fill="none" stroke="url(#sg)" stroke-width="7"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Red apex dot -->
+  <circle cx="50" cy="28" r="4" fill="#ff0033"/>
+</svg>
