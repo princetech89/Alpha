@@ -1,10 +1,7 @@
 <div align="center">
 
-<!-- Official AlphaSignal Logo Banner -->
-<img src="https://raw.githubusercontent.com/princetech89/Alpha/main/client/public/logo-banner.svg" width="100%" alt="AlphaSignal — AI-Powered Stock Pattern Detection Platform"/>
-
-<!-- Favicon logo mark (official icon) -->
-<img src="https://raw.githubusercontent.com/princetech89/Alpha/main/client/public/favicon.svg" width="80" height="80" alt="AlphaSignal Logo"/>
+<!-- Official AlphaSignal Logo -->
+<img src="https://raw.githubusercontent.com/princetech89/Alpha/main/client/public/favicon.svg" width="100" height="100" alt="AlphaSignal Logo"/>
 
 <!-- Animated Typing SVG -->
 <a href="https://github.com/princetech89/Alpha">
