@@ -1,0 +1,169 @@
+<svg viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg" width="900" height="220">
+  <defs>
+    <!-- Official brand gradient: cyan → red -->
+    <linearGradient id="sg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2ff"/>
+      <stop offset="100%" stop-color="#ff0033"/>
+    </linearGradient>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <!-- Glow filter for logo -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Subtle glow for text -->
+    <filter id="textglow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Wave bottom mask -->
+    <clipPath id="waveClip">
+      <rect x="0" y="0" width="900" height="220"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="220" fill="url(#bg)" rx="0"/>
+
+  <!-- Decorative grid lines (subtle) -->
+  <g opacity="0.06" stroke="#3b82f6" stroke-width="1">
+    <line x1="0" y1="44" x2="900" y2="44"/>
+    <line x1="0" y1="88" x2="900" y2="88"/>
+    <line x1="0" y1="132" x2="900" y2="132"/>
+    <line x1="0" y1="176" x2="900" y2="176"/>
+    <line x1="180" y1="0" x2="180" y2="220"/>
+    <line x1="360" y1="0" x2="360" y2="220"/>
+    <line x1="540" y1="0" x2="540" y2="220"/>
+    <line x1="720" y1="0" x2="720" y2="220"/>
+  </g>
+
+  <!-- Decorative candlestick chart (background, right side) -->
+  <g opacity="0.12" transform="translate(620, 20)">
+    <!-- Candle 1 bullish -->
+    <rect x="0" y="80" width="20" height="60" fill="#22c55e" rx="2"/>
+    <line x1="10" y1="70" x2="10" y2="80" stroke="#22c55e" stroke-width="2"/>
+    <line x1="10" y1="140" x2="10" y2="155" stroke="#22c55e" stroke-width="2"/>
+    <!-- Candle 2 bearish -->
+    <rect x="30" y="50" width="20" height="45" fill="#ef4444" rx="2"/>
+    <line x1="40" y1="35" x2="40" y2="50" stroke="#ef4444" stroke-width="2"/>
+    <line x1="40" y1="95" x2="40" y2="110" stroke="#ef4444" stroke-width="2"/>
+    <!-- Candle 3 bullish -->
+    <rect x="60" y="30" width="20" height="55" fill="#22c55e" rx="2"/>
+    <line x1="70" y1="18" x2="70" y2="30" stroke="#22c55e" stroke-width="2"/>
+    <line x1="70" y1="85" x2="70" y2="100" stroke="#22c55e" stroke-width="2"/>
+    <!-- Candle 4 bullish -->
+    <rect x="90" y="10" width="20" height="50" fill="#22c55e" rx="2"/>
+    <line x1="100" y1="0" x2="100" y2="10" stroke="#22c55e" stroke-width="2"/>
+    <line x1="100" y1="60" x2="100" y2="78" stroke="#22c55e" stroke-width="2"/>
+    <!-- Candle 5 bearish -->
+    <rect x="120" y="25" width="20" height="40" fill="#ef4444" rx="2"/>
+    <line x1="130" y1="12" x2="130" y2="25" stroke="#ef4444" stroke-width="2"/>
+    <line x1="130" y1="65" x2="130" y2="80" stroke="#ef4444" stroke-width="2"/>
+    <!-- Trend line -->
+    <polyline points="10,110 40,72 70,57 100,35 130,45" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 2"/>
+  </g>
+
+  <!-- Official Logo Mark (centered-left area) -->
+  <g transform="translate(80, 55) scale(1.15)" filter="url(#glow)">
+    <!-- Shadow/outline path -->
+    <path d="M30,75 C30,75 50,25 50,25 C50,25 70,75 70,75"
+          fill="none" stroke="#0f172a" stroke-width="14"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Main gradient stroke -->
+    <path d="M35,60 C35,60 65,56 65,46 C65,36 35,36 35,46"
+          fill="none" stroke="url(#sg)" stroke-width="12"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Red dot (top apex) -->
+    <circle cx="50" cy="25" r="4.5" fill="#ff0033"/>
+  </g>
+
+  <!-- Brand Name: AlphaSignal -->
+  <text x="218" y="112"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="54"
+        font-weight="800"
+        letter-spacing="-1"
+        fill="white"
+        filter="url(#textglow)">Alpha<tspan fill="url(#sg)">Signal</tspan></text>
+
+  <!-- Tagline -->
+  <text x="220" y="148"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="16"
+        font-weight="400"
+        letter-spacing="2"
+        fill="#94a3b8">
+    AI-POWERED STOCK PATTERN DETECTION PLATFORM
+  </text>
+
+  <!-- Divider line -->
+  <line x1="220" y1="162" x2="780" y2="162" stroke="url(#sg)" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Bottom stats row -->
+  <text x="220" y="185"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="13"
+        fill="#60a5fa"
+        letter-spacing="0.5">
+    28 Patterns
+  </text>
+  <text x="330" y="185"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="13"
+        fill="#94a3b8">•</text>
+  <text x="345" y="185"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="13"
+        fill="#60a5fa"
+        letter-spacing="0.5">
+    NSE &amp; BSE
+  </text>
+  <text x="415" y="185"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="13"
+        fill="#94a3b8">•</text>
+  <text x="430" y="185"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="13"
+        fill="#60a5fa"
+        letter-spacing="0.5">
+    GPT-4o-mini
+  </text>
+  <text x="520" y="185"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="13"
+        fill="#94a3b8">•</text>
+  <text x="535" y="185"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="13"
+        fill="#60a5fa"
+        letter-spacing="0.5">
+    Pinecone RAG
+  </text>
+  <text x="635" y="185"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="13"
+        fill="#94a3b8">•</text>
+  <text x="650" y="185"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="13"
+        fill="#60a5fa"
+        letter-spacing="0.5">
+    Live Streaming
+  </text>
+
+  <!-- Subtle corner accent -->
+  <circle cx="870" cy="20" r="40" fill="#3b82f6" opacity="0.06"/>
+  <circle cx="30" cy="200" r="30" fill="#00f2ff" opacity="0.06"/>
+</svg>
