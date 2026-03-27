@@ -1,14 +1,13 @@
 <div align="center">
 
 <!-- Official AlphaSignal Logo -->
-<img src="https://raw.githubusercontent.com/princetech89/Alpha/main/client/public/favicon.svg" width="100" height="100" alt="AlphaSignal Logo"/>
-
-<!-- Animated Typing SVG -->
 <a href="https://github.com/princetech89/Alpha">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2500&pause=600&color=3B82F6&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=80&lines=🔍+Detect+28+Chart+Patterns+in+Real+Time;🤖+AI-Powered+%7C+NSE+%26+BSE+%7C+Live+Market+Data;📈+GPT-4o+Insights+%7C+RAG+Chatbot+%7C+Pinecone+DB;⚡+Walk-Forward+Backtesting+%7C+Live+Streaming" alt="Typing Animation"/>
+  <img src="https://raw.githubusercontent.com/princetech89/Alpha/main/client/public/favicon.svg" width="120" height="120" alt="AlphaSignal Logo"/>
 </a>
 
-<br/><br/>
+# AlphaSignal
+
+<br/>
 
 <!-- Animated Activity / Pulse Badges -->
 <img src="https://img.shields.io/badge/🚀_Status-LIVE-22c55e?style=for-the-badge&labelColor=0f172a" />
@@ -637,10 +636,7 @@ git push origin feature/amazing-new-pattern
   <img src="https://img.shields.io/badge/Request%20Feature-22c55e?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
-<br/><br/>
-
-<!-- Repo Card -->
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=princetech89&repo=Alpha&theme=react&hide_border=true&bg_color=0f172a&title_color=3b82f6&icon_color=3b82f6&text_color=94a3b8)](https://github.com/princetech89/Alpha)
+<br/>
 
 </div>
 
