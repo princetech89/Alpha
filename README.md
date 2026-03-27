@@ -1,42 +1,42 @@
 <div align="center">
 
-<!-- Official AlphaSignal Logo -->
+<!-- Official AlphaSignal Logo (no background, icon only) -->
 <a href="https://github.com/princetech89/Alpha">
-  <img src="./logo.svg" width="130" height="130" alt="AlphaSignal Logo"/>
+  <img src="./logo.svg" width="120" height="120" alt="AlphaSignal Logo"/>
 </a>
 
-# AlphaSignal
+<h1>AlphaSignal</h1>
 
-<br/>
+<p><strong>AI-Powered Stock Pattern Detection Platform</strong></p>
 
-<!-- Animated Activity / Pulse Badges -->
-<img src="https://img.shields.io/badge/🚀_Status-LIVE-22c55e?style=for-the-badge&labelColor=0f172a" />
-<img src="https://img.shields.io/badge/Version-1.0.0-3b82f6?style=for-the-badge&labelColor=0f172a" />
-<img src="https://img.shields.io/badge/License-MIT-f59e0b?style=for-the-badge&labelColor=0f172a" />
-<img src="https://img.shields.io/badge/Market-NSE_%26_BSE-ef4444?style=for-the-badge&labelColor=0f172a" />
+<!-- Status Badges -->
+<img src="https://img.shields.io/badge/Status-LIVE-22c55e?style=for-the-badge&labelColor=0f172a"/>
+<img src="https://img.shields.io/badge/Version-1.0.0-3b82f6?style=for-the-badge&labelColor=0f172a"/>
+<img src="https://img.shields.io/badge/License-MIT-f59e0b?style=for-the-badge&labelColor=0f172a"/>
+<img src="https://img.shields.io/badge/Market-NSE_%26_BSE-ef4444?style=for-the-badge&labelColor=0f172a"/>
 
 <br/><br/>
 
-<!-- GitHub Stats Row -->
+<!-- GitHub Stats — using flat-square style (visible on all themes) -->
 <a href="https://github.com/princetech89/Alpha/stargazers">
-  <img src="https://img.shields.io/github/stars/princetech89/Alpha?style=social&label=⭐%20Star" alt="Stars"/>
+  <img src="https://img.shields.io/github/stars/princetech89/Alpha?style=flat-square&logo=github&label=Stars&color=3b82f6&labelColor=0f172a" alt="Stars"/>
 </a>
 <a href="https://github.com/princetech89/Alpha/network/members">
-  <img src="https://img.shields.io/github/forks/princetech89/Alpha?style=social&label=🍴%20Fork" alt="Forks"/>
+  <img src="https://img.shields.io/github/forks/princetech89/Alpha?style=flat-square&logo=github&label=Forks&color=22c55e&labelColor=0f172a" alt="Forks"/>
 </a>
 <a href="https://github.com/princetech89/Alpha/watchers">
-  <img src="https://img.shields.io/github/watchers/princetech89/Alpha?style=social&label=👁%20Watch" alt="Watchers"/>
+  <img src="https://img.shields.io/github/watchers/princetech89/Alpha?style=flat-square&logo=github&label=Watchers&color=f59e0b&labelColor=0f172a" alt="Watchers"/>
 </a>
 <a href="https://github.com/princetech89/Alpha/issues">
-  <img src="https://img.shields.io/github/issues/princetech89/Alpha?style=flat&label=Issues&color=ef4444" alt="Issues"/>
+  <img src="https://img.shields.io/github/issues/princetech89/Alpha?style=flat-square&logo=github&label=Issues&color=ef4444&labelColor=0f172a" alt="Issues"/>
 </a>
 <a href="https://github.com/princetech89/Alpha/commits/main">
-  <img src="https://img.shields.io/github/last-commit/princetech89/Alpha?style=flat&label=Last%20Commit&color=22c55e" alt="Last Commit"/>
+  <img src="https://img.shields.io/github/last-commit/princetech89/Alpha?style=flat-square&logo=github&label=Last+Commit&color=8b5cf6&labelColor=0f172a" alt="Last Commit"/>
 </a>
 
 <br/><br/>
 
-<!-- Tech Stack Badges Row 1 -->
+<!-- Tech Stack Badges -->
 <img src="https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black"/>
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
 <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
@@ -54,14 +54,9 @@
 
 ---
 
-<!-- Animated separator -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<div align="center">
-
 ## 🌟 What is AlphaSignal?
-
-</div>
 
 > **AlphaSignal** is a **full-stack AI trading intelligence platform** that detects **28 technical chart patterns** across NSE & BSE stocks in real time. It combines live market data from **Angel One SmartAPI** and **Upstox** with **OpenAI GPT-4o-mini** and **Pinecone RAG** to deliver pattern signals with confidence scores, plain-English AI explanations, historical walk-forward back-tested success rates, and an intelligent stock assistant.
 
@@ -262,73 +257,74 @@ alphasignal/
 │   ├── index.html
 │   ├── 📂 public/                  # Static assets (favicon.svg, opengraph.jpg)
 │   └── 📂 src/
-│       ├── App.tsx              # Route definitions (Wouter)
-│       ├── main.tsx             # React entry point
-│       ├── index.css            # Global styles + Tailwind v4 config
+│       ├── App.tsx                 # Route definitions (Wouter)
+│       ├── main.tsx                # React entry point
+│       ├── index.css               # Global styles + Tailwind v4 config
 │       ├── 📂 components/          # Shared UI components
 │       │   ├── AlphaSignalLogo.tsx
 │       │   ├── AnalysisCharts.tsx
-│       │   ├── ChatBot.tsx       # AlphaSignal Bot (streaming RAG)
+│       │   ├── ChatBot.tsx         # AlphaSignal Bot (streaming RAG)
 │       │   ├── GlobalSearch.tsx
-│       │   ├── Layout.tsx        # App shell with collapsible sidebar
+│       │   ├── Layout.tsx          # App shell with collapsible sidebar
 │       │   ├── ProfilePanel.tsx
-│       │   └── 📂 ui/            # Radix UI base components
+│       │   └── 📂 ui/              # Radix UI base components
 │       ├── 📂 contexts/
-│       │   └── AuthContext.tsx   # Session authentication context
+│       │   └── AuthContext.tsx     # Session authentication context
 │       ├── 📂 hooks/
-│       │   ├── useLivePrices.ts  # SSE live price subscription hook
+│       │   ├── useLivePrices.ts    # SSE live price subscription hook
 │       │   └── useToast.ts
 │       ├── 📂 lib/
-│       │   ├── api.ts            # Typed fetch wrappers
-│       │   ├── queryClient.ts    # React Query client setup
+│       │   ├── api.ts              # Typed fetch wrappers
+│       │   ├── queryClient.ts      # React Query client setup
 │       │   └── utils.ts
 │       └── 📂 pages/
-│           ├── Dashboard.tsx     # Market overview + top signals
-│           ├── Screener.tsx      # NSE / BSE pattern screener
-│           ├── Alerts.tsx        # High-confidence alerts feed
-│           ├── StockDetail.tsx   # Full stock analysis view
-│           ├── Login.tsx         # Register / sign-in page
+│           ├── Dashboard.tsx       # Market overview + top signals
+│           ├── Screener.tsx        # NSE / BSE pattern screener
+│           ├── Alerts.tsx          # High-confidence alerts feed
+│           ├── StockDetail.tsx     # Full stock analysis view
+│           ├── Login.tsx           # Register / sign-in page
 │           └── NotFound.tsx
 │
 ├── 📂 server/                      # Express backend
-│   ├── index.ts                 # Server entry point
+│   ├── index.ts                    # Server entry point
 │   ├── 📂 api/
-│   │   ├── routes.ts            # All stock / AI / market API routes
-│   │   └── auth.ts              # Auth routes (register, login, logout, profile)
+│   │   ├── routes.ts               # All stock / AI / market API routes
+│   │   └── auth.ts                 # Auth routes (register, login, logout, profile)
 │   ├── 📂 middleware/
-│   │   ├── vite.ts              # Vite dev-server integration
-│   │   └── static.ts            # Production static file serving
+│   │   ├── vite.ts                 # Vite dev-server integration
+│   │   └── static.ts               # Production static file serving
 │   ├── 📂 services/
-│   │   ├── angelone.ts          # Angel One SmartAPI client
-│   │   ├── upstox.ts            # Upstox API client + dynamic symbol universe
-│   │   ├── gemini.ts            # OpenAI GPT-4o-mini client (pattern AI)
-│   │   └── pinecone.ts          # Pinecone RAG + OpenAI streaming chat
+│   │   ├── angelone.ts             # Angel One SmartAPI client
+│   │   ├── upstox.ts               # Upstox API client + dynamic symbol universe
+│   │   ├── gemini.ts               # OpenAI GPT-4o-mini client (pattern AI)
+│   │   └── pinecone.ts             # Pinecone RAG + OpenAI streaming chat
 │   ├── 📂 db/
-│   │   ├── db.ts                # Drizzle + pg connection pool
-│   │   └── profileStore.ts      # User CRUD operations
+│   │   ├── db.ts                   # Drizzle + pg connection pool
+│   │   └── profileStore.ts         # User CRUD operations
 │   └── 📂 data/
-│       ├── pattern-engine.ts    # 28 pattern detectors + walk-forward backtest
-│       ├── nse-symbols.ts       # Static NSE symbol list (304 symbols)
-│       └── bse-symbols.ts       # Static BSE symbol list (67 symbols)
+│       ├── pattern-engine.ts       # 28 pattern detectors + walk-forward backtest
+│       ├── nse-symbols.ts          # Static NSE symbol list (304 symbols)
+│       └── bse-symbols.ts          # Static BSE symbol list (67 symbols)
 │
 ├── 📂 api/                         # Vercel serverless
-│   ├── index.ts                 # Vercel serverless entry point
-│   └── bundle.js                # Pre-built serverless bundle (esbuild output)
+│   ├── index.ts                    # Vercel serverless entry point
+│   └── bundle.js                   # Pre-built serverless bundle (esbuild output)
 │
 ├── 📂 shared/
-│   └── schema.ts                # Drizzle database schema (profileUsers table)
+│   └── schema.ts                   # Drizzle database schema (profileUsers table)
 │
 ├── 📂 python/
-│   └── engine.py                # Optional Python indicator engine (subprocess fallback)
+│   └── engine.py                   # Optional Python indicator engine (subprocess fallback)
 │
 ├── 📂 scripts/
-│   ├── build.ts                 # Production build script (esbuild + Vite)
-│   ├── bundle-vercel.ts         # Vercel serverless bundle script (esbuild)
-│   └── ingest-kb.mjs            # Pinecone knowledge base PDF ingestion script
+│   ├── build.ts                    # Production build script (esbuild + Vite)
+│   ├── bundle-vercel.ts            # Vercel serverless bundle script (esbuild)
+│   └── ingest-kb.mjs               # Pinecone knowledge base PDF ingestion script
 │
 ├── 📂 docs/                        # Project documentation PDFs
-├── .env                         # ⚠️ Environment variables (NEVER commit this)
-├── vercel.json                  # Vercel deployment configuration
+├── .env                            # ⚠️ Environment variables (NEVER commit this)
+├── logo.svg                        # Official AlphaSignal logo
+├── vercel.json                     # Vercel deployment configuration
 ├── drizzle.config.ts
 ├── vite.config.ts
 ├── tsconfig.json
@@ -370,7 +366,7 @@ npm install
 
 ### Step 2 — Configure Environment Variables
 
-Create a `.env` file in the project root with the following variables:
+Create a `.env` file in the project root:
 
 ```env
 # ── Angel One SmartAPI ──────────────────────────────────────────────────────
@@ -401,7 +397,7 @@ SESSION_SECRET=your_random_secret_string_min_32_chars
 NODE_ENV=development
 ```
 
-> ⚠️ **Never commit your `.env` file.** It is already in `.gitignore`.
+> ⚠️ **Never commit your `.env` file.** It is already listed in `.gitignore`.
 
 ---
 
@@ -580,10 +576,14 @@ All API routes and the Upstox OAuth callback are routed through `api/bundle.js` 
 
 ## 📝 Notes
 
-> ⏰ **Market Hours:** 09:15 – 15:30 IST, Monday – Friday  
-> 💰 **Currency:** All prices are in **INR (₹)**  
-> 📅 **Lookback:** Pattern detection operates on **daily candles** (120-day lookback)  
-> 🤖 **AlphaSignal Bot** only answers **stock market and trading topics**  
+> ⏰ **Market Hours:** 09:15 – 15:30 IST, Monday – Friday
+> 
+> 💰 **Currency:** All prices are in **INR (₹)**
+> 
+> 📅 **Lookback:** Pattern detection operates on **daily candles** (120-day lookback)
+> 
+> 🤖 **AlphaSignal Bot** only answers **stock market and trading topics**
+> 
 > ⚖️ **Disclaimer:** For educational and research purposes only — **not SEBI-registered investment advice**
 
 ---
@@ -635,8 +635,6 @@ git push origin feature/amazing-new-pattern
 <a href="https://github.com/princetech89/Alpha/issues/new?labels=enhancement">
   <img src="https://img.shields.io/badge/Request%20Feature-22c55e?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
-
-<br/>
 
 </div>
 
