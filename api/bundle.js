@@ -17,9 +17,6 @@ import multer from "multer";
 // server/services/pinecone.ts
 import { Pinecone } from "@pinecone-database/pinecone";
 import { OpenAI } from "openai";
-import { createRequire } from "module";
-var require2 = createRequire(import.meta.url);
-var pdfParse = require2("pdf-parse");
 var _openai = process.env.OPENAI_API_KEY ? new OpenAI({ apiKey: process.env.OPENAI_API_KEY }) : null;
 var _pc = process.env.PINECONE_API_KEY ? new Pinecone({ apiKey: process.env.PINECONE_API_KEY }) : null;
 function getOpenAI() {
@@ -95,6 +92,8 @@ async function ingestPdfBuffer(buffer, filename) {
   if (!isPineconeReady()) {
     return { chunks: 0, message: "Pinecone not configured (check .env)" };
   }
+  const pdfParseModule = await import("pdf-parse");
+  const pdfParse = pdfParseModule.default ?? pdfParseModule;
   const parsed = await pdfParse(buffer);
   const raw = parsed.text.replace(/\s+/g, " ").trim();
   if (raw.length < 100) {

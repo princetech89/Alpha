@@ -10,9 +10,6 @@
 
 import { Pinecone } from "@pinecone-database/pinecone";
 import { OpenAI } from "openai";
-import { createRequire } from "module";
-const require = createRequire(import.meta.url);
-const pdfParse: (buf: Buffer) => Promise<{ text: string }> = require("pdf-parse");
 
 // ── Eager-init clients (no cold-start on first request) ────────────────────────
 const _openai = process.env.OPENAI_API_KEY
@@ -127,7 +124,9 @@ export async function ingestPdfBuffer(
     return { chunks: 0, message: "Pinecone not configured (check .env)" };
   }
 
-  // 1. Parse PDF
+  // 1. Parse PDF — lazy import so pdf-parse doesn't crash on module load in serverless
+  const pdfParseModule = await import("pdf-parse");
+  const pdfParse: (buf: Buffer) => Promise<{ text: string }> = (pdfParseModule as any).default ?? pdfParseModule;
   const parsed = await pdfParse(buffer);
   const raw    = parsed.text.replace(/\s+/g, " ").trim();
   if (raw.length < 100) {
