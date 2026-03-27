@@ -188,10 +188,12 @@ export function isMasterLoaded(): boolean { return _masterLoaded; }
  */
 async function downloadInstrumentMaster(exchange: "NSE" | "BSE"): Promise<DynamicSymbol[]> {
   const url = `https://assets.upstox.com/market-quote/instruments/exchange/${exchange}.json.gz`;
-  const res = await fetch(url, { headers: { "Accept-Encoding": "gzip" } });
+  const res = await fetch(url);
   if (!res.ok) throw new Error(`Failed to download ${exchange} master (${res.status})`);
 
-  const raw: any[] = await res.json();
+  const buffer = Buffer.from(await res.arrayBuffer());
+  const decompressed = await gunzipAsync(buffer);
+  const raw: any[] = JSON.parse(decompressed.toString("utf-8"));
   const equity = raw.filter((i: any) => i.instrument_type === "EQ" && i.tradingsymbol && i.isin);
 
   return equity.map((i: any) => ({
@@ -291,6 +293,10 @@ export async function initDynamicSymbols(
 // ── Persistent token store (survives server restarts) ─────────────────────────
 import fs from "fs";
 import path from "path";
+import { gunzip } from "zlib";
+import { promisify } from "util";
+
+const gunzipAsync = promisify(gunzip);
 
 const TOKEN_FILE = path.resolve(process.cwd(), ".upstox-token.json");
 
