@@ -1,0 +1,10 @@
+{
+  "css.lint.unknownAtRules": "ignore",
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*)[\"'`]"]
+  ],
+  "python.defaultInterpreterPath": "server/.venv/Scripts/python.exe",
+  "python.analysis.extraPaths": [
+    "server/.venv/Lib/site-packages"
+  ]
+}
